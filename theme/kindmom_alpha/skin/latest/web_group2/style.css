@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.lat_web2 {position:relative;margin-bottom:15px}
+.lat_web2 h2{padding:0 8px;height:28px;line-height:2.4em;border:1px solid #cdd6de;background:#eff0f5;color:#5164a7}
+.lat_web2 ul{padding:0;margin:0;list-style:none}
+.lat_web2 ul li{padding:10px 0;border-bottom:1px solid #eaeaea;zoom:1}
+.lat_web2 ul li:after{display:block;visibility:hidden;clear:both;content:""}
+.lat_web2 .wimg{position:absolute;display:block}
+.lat_web2 .wcontent{float:left}
+.lat_web2 .wcontent .s_subject{margin-bottom:10px;font-weight:bold}
+.lat_web2 .wcontent .s_subject a{color:#2d3740}
+.lat_web2 .wcontent .s_subject img{vertical-align:top}
+.lat_web2 .wcontent .s_memo{height:34px;margin-bottom:10px;color:#19232d;line-height:17px;overflow:hidden}
+.lat_web2 .wcontent .s_date{font-size:11px;color:#a1a3b2;padding-right:5px}
+.lat_web2 .wcontent .s_date strong{padding-right:10px;font-weight:normal}
+.lat_web2 .wcontent .s_date strong a{color:#5164a7}

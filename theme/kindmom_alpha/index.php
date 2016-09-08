@@ -17,6 +17,13 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <h2 class="sound_only">최신글</h2>
 <!-- 최신글 시작 { -->
+
+<div style="float:left;width:352px">
+    <?php echo latest_group("theme/web_group2", "talk", 3, 20); ?> 
+</div>
+
+
+
 <?php
 //  최신글
 // $sql = " select bo_table

@@ -18,6 +18,8 @@ include_once(G5_LIB_PATH.'/poll.lib.php');
 include_once(G5_LIB_PATH.'/visit.lib.php');
 include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
+// 최신글 그룹별 출력을 위해 WJ
+include_once(G5_LIB_PATH.'/latest_group.lib.php');
 ?>
 
 <?php include_once(G5_THEME_PATH.'/inc/main/header.php'); ?>

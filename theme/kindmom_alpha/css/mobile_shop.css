@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* SIR 지운아빠 */
 
 /* 초기화 */
 html {overflow-y:scroll}
@@ -351,11 +352,10 @@ html.no-overflowscrolling #sc_coupon_frm, html.no-overflowscrolling #od_coupon_f
 #sod_frm_paysel ul {margin:0;padding:0;}
 #sod_frm_paysel ul:after {display:block;visibility:hidden;clear:both;content:""}
 #sod_frm_paysel li {float:left;padding:5px 2%;width:46%;height:21px}
-#sod_frm_paysel .KPAY{background:url('../../../img/kpay_logo.png') no-repeat;width:37px;height:15px;overflow:hidden;text-indent:-999px;display:inline-block;}
-#sod_frm_paysel .PAYNOW{background:url('../../../img/paynow_logo.png') no-repeat;width:46px;height:15px;overflow:hidden;text-indent:-999px;display:inline-block;}
-#sod_frm_paysel .PAYCO{background:url('../../../img/payco_logo.png') no-repeat 1px ;width:46px;height:15px;overflow:hidden;text-indent:-999px;display:inline-block;}
-.kakaopay_icon{background:url('../../../img/kakao.png') no-repeat ;height:21px;width:74px;display:inline-block;overflow:hidden;text-indent:-999px}
-
+x#sod_frm_paysel .KPAY{background:url('../img/kpay_logo.png') no-repeat;width:37px;height:15px;overflow:hidden;text-indent:-999px;display:inline-block;}
+#sod_frm_paysel .PAYNOW{background:url('../img/paynow_logo.png') no-repeat;width:46px;height:15px;overflow:hidden;text-indent:-999px;display:inline-block;}
+#sod_frm_paysel .PAYCO{background:url('../img/payco_logo.png') no-repeat 1px;width:46px;height:15px;overflow:hidden;text-indent:-999px;display:inline-block;}
+.kakaopay_icon{background:url('../img/kakao.png') no-repeat ;height:21px;width:74px;display:inline-block;overflow:hidden;text-indent:-999px}
 
 #sod_frm_paysel #settle_bank {padding:10px;background:#fff;line-height:2em;border:1px solid #dbdbdb}
 #sod_frm_paysel #settle_bank label {display:inline-block;margin:0 10px 0 0;font-weight:bold}
@@ -713,6 +713,7 @@ a.btn_admin:focus, a.btn_admin:hover {text-decoration:none}
 #sev_hhtml,#sev_thtml{padding:10px}
 #sev_hhtml img,#sev_thtml img{width:100%}
 
+
 /*피시일때 모바일버전 주문폼*/
 #sod_frm {position:relative}
 #sod_frm p{margin-bottom:10px}
@@ -725,7 +726,3 @@ a.btn_admin:focus, a.btn_admin:hover {text-decoration:none}
 #sod_frm_pay{padding:10px 0}
 #sod_frm_pay h2{padding:10px 0 10px}
 #display_pay_button .btn_submit{padding:8px 5px}
-
-/*네이버페이*/
-.naverpay-item{padding-top:15px;clear:both}
-#sod_bsk_act .naverpay-cart{margin-top:15px;clear:both;position:static}
