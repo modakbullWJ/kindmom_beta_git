@@ -87,16 +87,22 @@ if(G5_IS_MOBILE) {
 if(!defined('G5_IS_ADMIN'))
     echo $config['cf_add_script'];
 ?>
+
+<!-- main_slider.php 슬라이드 js 추가 wj-->
+<script src="<?php echo G5_THEME_URL ?>/js/jquery.bannerSlider-1.0.js"></script>
+<!--  jquery css 추가-->
+<script src="<?php echo G5_THEME_URL ?>/css/jqueryCSS.css"></script>
+
 </head>
 <body<?php echo isset($g5['body_script']) ? $g5['body_script'] : ''; ?>>
 <?php
-if ($is_member) { // 회원이라면 로그인 중이라는 메세지를 출력해준다.
-    $sr_admin_msg = '';
-    if ($is_admin == 'super') $sr_admin_msg = "최고관리자 ";
-    else if ($is_admin == 'group') $sr_admin_msg = "그룹관리자 ";
-    else if ($is_admin == 'board') $sr_admin_msg = "게시판관리자 ";
-
-    echo '<div id="hd_login_msg">'.$sr_admin_msg.get_text($member['mb_nick']).'님 로그인 중 ';
-    echo '<a href="'.G5_BBS_URL.'/logout.php">로그아웃</a></div>';
-}
+// if ($is_member) { // 회원이라면 로그인 중이라는 메세지를 출력해준다.
+//     $sr_admin_msg = '';
+//     if ($is_admin == 'super') $sr_admin_msg = "최고관리자 ";
+//     else if ($is_admin == 'group') $sr_admin_msg = "그룹관리자 ";
+//     else if ($is_admin == 'board') $sr_admin_msg = "게시판관리자 ";
+//
+//     echo '<div id="hd_login_msg">'.$sr_admin_msg.get_text($member['mb_nick']).'님 로그인 중 ';
+//     echo '<a href="'.G5_BBS_URL.'/logout.php">로그아웃</a></div>';
+// }
 ?>

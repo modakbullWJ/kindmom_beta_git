@@ -1,8 +1,12 @@
 @charset "utf-8";
 /* SIR 지운아빠 */
 
+@import url("common.css");
+
+
+
 /* 초기화 */
-html {overflow-y:scroll}
+/*html {overflow-y:scroll}
 body {margin:0;padding:0;font-size:0.75em;font-family:dotum}
 html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
 h1, h2, h3, h4, h5, h6 {font-size:1em;font-family:dotum}
@@ -20,7 +24,7 @@ p {margin:0;padding:0;word-break:break-all}
 hr {display:none}
 pre {overflow-x:scroll;font-size:1.1em}
 a:link, a:visited {color:#000;text-decoration:none}
-a:hover, a:focus, a:active {color:#000;text-decoration:underline}
+a:hover, a:focus, a:active {color:#000;text-decoration:underline}*/
 
 /* 팝업레이어 */
 #hd_pop {z-index:1000;position:relative;margin:0 auto;width:970px;height:0}
@@ -40,10 +44,10 @@ a:hover, a:focus, a:active {color:#000;text-decoration:underline}
 #logo {float:left;padding:5px 0 0}
 
 /* 전체 검색 */
-#hd_sch {float:left;margin:0 0 0 20px;padding:0;border:1px solid #c3c6ca}
+#hd_sch {float:right;margin:8px 85px 0 0;padding:0;border-bottom:1px solid #f9abca;}
 #hd_sch legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
-#hd_sch #sch_stx {padding-left:5px;width:110px;height:24px;border:0;background:#fff;line-height:1.9em !important;line-height:1.6em}
-#hd_sch #sch_submit {padding:0 5px;height:26px;border:0;background:#e2e6eb;color:#333;cursor:pointer}
+#hd_sch #sch_stx {padding-left:5px;width:200px;height:45px;border:0;background:#fff;line-height:1.9em !important;line-height:1.6em}
+#hd_sch #sch_submit {padding:0; height:45px; width: 50px; border:0;background:#f9abca;color:#fff;cursor:pointer; text-align: center;}
 
 /* 텍스트 크기 조절 */
 #text_size {float:left;margin:0 0 0 10px;letter-spacing:-3px}
@@ -81,12 +85,13 @@ a:hover, a:focus, a:active {color:#000;text-decoration:underline}
 #gnb_empty a {text-decoration:underline}
 
 /* 중간 레이아웃 */
-#wrapper {z-index:5;margin:0 auto;width:970px;border-right:1px solid #dde4e9;border-left:1px solid #dde4e9;zoom:1}
+#wrapper {z-index:5;margin:0 auto;width:1200px;border-right:1px solid #dde4e9;border-left:1px solid #dde4e9;zoom:1; margin-top: 20px; }
 #wrapper:after {display:block;visibility:hidden;clear:both;content:""}
 
 #aside {float:right;margin:0 0 0 -1px;width:210px;border-left:1px solid #dde4e9;background:#fff}
 
-#container {z-index:4;position:relative;float:left;padding:15px 16px 15px 15px;width:728px;min-height:500px;height:auto !important;height:500px;border-right:1px solid #dde4e9;background:#fff;font-size:1em;zoom:1}
+#container {z-index:4;position:relative;float:left;padding:15px 16px 15px 15px;width:800px;min-height:500px;height:auto !important;
+  height:500px;border-right:1px solid #dde4e9;background:#f4f4f4;font-size:1em;zoom:1}
 #container:after {display:block;visibility:hidden;clear:both;content:""}
 #container_title {margin-bottom:20px;font-size:1.2em;font-weight:bold}
 
@@ -124,8 +129,8 @@ a:hover, a:focus, a:active {color:#000;text-decoration:underline}
 #captcha legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden;}
 #captcha #captcha_img {width:160px;height:60px;border:1px solid #e9e9e9;vertical-align:top;padding:0;margin:0}
 #captcha #captcha_mp3 {position:absolute;top:0;left:161px;;margin:0;padding:0;width:31px;height:31px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer}
-#captcha #captcha_mp3 span {position:absolute;top:0;left:0;width:31px;height:31px;background:url('../../../img/captcha.png') no-repeat;}
-#captcha #captcha_reload {position:absolute;top:31px;left:161px;margin:0;padding:0;width:31px;height:31px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;background:url('../../../img/captcha.png') no-repeat  0 -30px;border-top:1px solid #ccc;text-indent:-999px}
+#captcha #captcha_mp3 span {position:absolute;top:0;left:0;width:31px;height:31px;background:url('../img/captcha.png') no-repeat;}
+#captcha #captcha_reload {position:absolute;top:31px;left:161px;margin:0;padding:0;width:31px;height:31px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;background:url('../img/captcha.png') no-repeat  0 -30px;border-top:1px solid #ccc;text-indent:-999px}
 #captcha #captcha_key {margin:0 0 0 33px;padding:0 5px;width:70px;height:60px;border:1px solid #b8c9c2;background:#f7f7f7;font-size:1.333em;font-weight:bold;text-align:center;line-height:2.8em;vertical-align:top}
 #captcha #captcha_info {display:block;margin:5px 0 0;font-size:0.95em;letter-spacing:-0.1em}
 
@@ -136,7 +141,7 @@ a:hover, a:focus, a:active {color:#000;text-decoration:underline}
 #captcha.m_captcha #captcha_reload span{display:none;}
 #captcha.m_captcha #captcha_key {margin:0;padding:0 5px;width:115px;height:29px;border:1px solid #b8c9c2;background:#f7f7f7;font-size:1.333em;font-weight:bold;text-align:center;line-height:29px;margin-left:3px}
 #captcha.m_captcha #captcha_info {display:block;margin:5px 0 0;font-size:0.95em;letter-spacing:-0.1em}
-#captcha.m_captcha #captcha_mp3 {width:31px;height:31px;background:url('../../../img/captcha.png') no-repeat; vertical-align:top;overflow:hidden;cursor:pointer;text-indent:-9999px;border:none}
+#captcha.m_captcha #captcha_mp3 {width:31px;height:31px;background:url('../img/captcha.png') no-repeat; vertical-align:top;overflow:hidden;cursor:pointer;text-indent:-9999px;border:none}
 
 /* ckeditor 단축키 */
 .cke_sc {margin:0 0 5px;text-align:right}
@@ -289,3 +294,13 @@ a.btn_admin:focus, a.btn_admin:hover {text-decoration:none}
 /* Mobile화면으로 */
 #device_change {display:block;margin:0.3em;padding:0.5em 0;border:1px solid #eee;border-radius:2em;background:#fff;color:#000;font-size:2em;text-decoration:none;text-align:center}
 
+/*메일인증*/
+.rg_em{margin-top:5px}
+
+.rg_em caption{padding:0;font-size:0;line-height:0;overflow:hidden}
+
+/*캡챠 모바일에서 피시버젼*/
+#captcha.m_captcha audio{display:block;margin:5px 0 10px;}
+#captcha.m_captcha #captcha_key{margin-left:3px }
+#captcha.m_captcha #captcha_reload span{background:none;display:inline}
+#captcha.m_captcha  #captcha_reload {position:relative ;width:auto;top:0;left:0;margin:0;padding:0 10px;height:43px;border:0;background:#e4eaec;vertical-align:middle;overflow:hidden;cursor:pointer}
