@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.aside1{position: absolute;width: 320px;height: 140px;background:#000;z-index: 2;cursor:pointer}
+.aside2{position: absolute;width: 155px;height: 145px;background:#000;z-index: 2;cursor:pointer}
+.mobile1{position: absolute;width: 300px;height: 160px;background:#000;z-index: 2;cursor:pointer}
+.mobile2{position: absolute;width: 60px;height: 60px;background:#000;z-index: 2;cursor:pointer}
+.travel1{position: absolute;width: 300px;height: 209px;background:#000;z-index: 2;cursor:pointer}
+.travel2{position: absolute;width: 60px;height: 60px;background:#000;z-index: 2;cursor:pointer}
+.sports{position: absolute;width: 80px;height: 80px;background:#000;z-index: 2;cursor:pointer}

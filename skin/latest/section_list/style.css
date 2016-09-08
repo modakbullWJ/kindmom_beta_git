@@ -1,0 +1,14 @@
+.section_list a{text-decoration:none}
+.section_list h3{background:#f84e32;color:#FFF;padding:7px 10px}
+.section_list ul{padding:0;margin:0;list-style:none}
+.section_list ul li{width:300px;border-bottom:1px solid #ddd;padding:10px 0;zoom:1}
+.section_list ul li:after{visibility:hidden;content:"";display:block;clear:both}
+.section_list .img{float:left}
+.section_list .inner{float:left;padding-left:15px;}
+.section_list .inner .tit{width:205px;margin-bottom:10px;color:#19232d;font-weight:bold}
+.section_list .inner .desc{width:205px;margin-bottom:10px;color:#19232d;}
+.section_list .inner .txt{color:#a1a3b2;text-align:right;padding-right:5px}
+
+.section_list .inner .tit a:link, .section_list .inner_sub .tit_sub a:visited{color:#a1a3b2;}
+.section_list .inner .tit a:hover{color:#f84e32}
+

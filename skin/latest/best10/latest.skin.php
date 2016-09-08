@@ -1,0 +1,45 @@
+<?
+if (!defined("_GNUBOARD_")) exit; // 개별 페이지 접근 불가
+
+if ($izen_sort == 'wr_hit')
+{
+$sub_title = "";
+}
+
+?>
+<style type="text/css">
+	.subject {width:212px;padding:2px 0 0;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:block}
+	.subject img {vertical-align:bottom;}
+</style>
+<table width="212" cellpadding="0" cellspacing="0" style="padding:2px 0 0;">
+<? for ($i=0; $i<count($list); $i++) { ?>
+<tr>
+    <td colspan="4">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td height="22" valign="bottom" class="subject"><img src="../skin/latest/best10/img/btn<?=$titles?>_<?=$i+1?>.gif" align="top">
+            <?
+            echo $list[$i]['icon_reply'] . " ";
+            echo "<a href='{$list[$i]['href']}' target=_parent>";
+            if ($list[$i]['is_notice'])
+                echo $list[$i]['subject'];
+            else
+                echo $list[$i]['subject'];
+            echo "</a>";
+
+            //if ($list[$i]['comment_cnt']) //
+                //echo " <a href=\"{$list[$i]['comment_href']}\"><span style='font-family:돋움; font-size:8pt; '>{$list[$i]['comment_cnt']}</span></a>";//
+
+            // if ($list[$i]['link']['count']) { echo "[{$list[$i]['link']['count']}]"; }
+            // if ($list[$i]['file']['count']) { echo "<{$list[$i]['file']['count']}>"; }
+
+            ?></td></tr>
+
+        </table>
+	</td>
+</tr>
+
+<? } ?>
+
+<? if (count($list) == 0) { ?><tr><td colspan=4 align=center height=50>게시물이 없습니다.</a></td></tr><? } ?>
+</table>

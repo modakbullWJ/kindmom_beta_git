@@ -1,0 +1,6 @@
+.aside{zoom:1}
+.aside:after{visibility:hidden;content:"";display:block;clear:both}
+.aside .img_main{position:relative}
+.aside .img_main .tit_board{display:block;position:absolute;top:0;left:10px;padding:5px 10px;background:#f84e32;color:#FFF;font-weight:bold}
+.aside .img_sub{float:left;margin-top:10px;margin-right:10px;}
+.aside .lst{margin-right:0}

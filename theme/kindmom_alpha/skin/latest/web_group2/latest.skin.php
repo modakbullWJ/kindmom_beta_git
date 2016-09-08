@@ -30,7 +30,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
             <div class="wcontent" style="<?php if($thumb['src']) { ?>margin-left:<?php echo $thumb_width+12; ?>px;<?php } ?>min-height:<?php echo $thumb_height; ?>px">
                 <p class="s_subject"><a href="<?php echo $list[$i]['href']; ?>"><?php echo $list[$i]['subject']; ?></a> <?php if (isset($list[$i]['icon_new'])) echo " " . $list[$i]['icon_new']; ?></p>
                 <p class="s_memo"><?php echo $wr_subject; ?></p>
-                <p class="s_date"><strong><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=<?php echo $list[$i]['bo_table'] ?>"><?php echo $list[$i]['bo_subject']; ?></a></strong></p>
+                <!-- <p class="s_date"><strong><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=<?php echo $list[$i]['bo_table'] ?>"><?php echo $list[$i]['bo_subject']; ?></a></strong></p> -->
             </div>
         </li>
     <?php } ?>

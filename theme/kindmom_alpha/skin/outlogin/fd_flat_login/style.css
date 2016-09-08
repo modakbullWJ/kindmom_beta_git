@@ -1,0 +1,69 @@
+/* 플로우디자인 */
+/* www.flowdesign.co.kr */
+/* 아웃로그인 스킨 */
+
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.ol {position:relative;padding:0;border-bottom:1px solid #dde4e9;background:#ecf0f1;border-radius:3px;}
+.ol h2 {display:inline-block;margin:0;padding:0;width:100%;height:32px;font-family:Arial;font-size:15px;line-height:32px;color:#510900;background:#e84c3d;text-align:center;overflow:hidden}
+.ol ul {margin:0;padding:0;list-style:none}
+
+.ol a.btn_fd_admin {display:inline-block;width:100%;margin-top:7px;height:24px;border:1px solid #e84c3d;background:#fff;color:#e84c3d;text-align:center;text-decoration:none;line-height:24px;font-family:Arial;font-weight:bold;letter-spacing:0.1em;vertical-align:middle;border-radius:3px;} /* 관리자 전용 버튼 */
+.ol a.btn_fd_admin:focus, .ol a.btn_fd_admin:hover {text-decoration:none;background:#e84c3d;color:#fff;}
+
+#fd_page {position:relative;margin:15px;}
+#fd_page h5 {display:inline-block;width:100%;line-height:24px;background:#fff;border:1px solid #e4eaec;text-align:center;border-radius:3px;}
+#fd_page ul {display:inline-block;width:100%;line-height:16px;background:#fff;border:1px solid #e4eaec;text-align:center;font-family:Arial;font-weight:bold;letter-spacing:0em;margin-top:7px;border-radius:3px;}
+#fd_page ul li a {color:#bdc4ca;}
+#ol_after_private a:focus,
+#ol_after_private a:hover {text-decoration:none;color:#e8180c}
+
+#ol_after_ft {text-align:justify}
+#ol_after_ft a {display:inline-block;width:100%;height:24px;background:#e84c3d;border:1px solid #e84c3d;color:#fff;font-size:0.9em;font-weight:bold;text-align:center;line-height:24px;margin-top:8px;border-radius:3px;}
+#ol_after_ft a:focus, #ol_after_ft a:hover {text-decoration:none !important}
+
+#ol_before {border-radius:4px;font-family:Arial;}
+#ol_before fieldset {position:relative}
+#ol_id {display:block;margin:0 0 5px !important;margin:0 0 3px;padding:0px;width:100%;height:22px;border:1px solid #e4eaec;background:#f7f7f7;line-height:1.6em;font-family:Arial;font-weight:bold;letter-spacing:0.1em;border-radius:3px;}
+.ol_idlabel {position:absolute;top:6px;left:5px;color:#bdc4ca;font-size:0.95em}
+#ol_id:focus {outline:solid 1px #e8180c;}
+#ol_pw {display:block;margin:0 0 5px !important;margin:0 0 3px;padding:0px;width:100%;height:22px;border:1px solid #e4eaec;background:#f7f7f7;vertical-align:top;line-height:1.6em;font-family:Arial;font-weight:bold;letter-spacing:0.1em;border-radius:3px;}
+.ol_pwlabel {position:absolute;top:35px;left:5px;color:#bdc4ca;font-size:0.95em}
+.fd_required, textarea.fd_required {background:url('../img/wrest.gif') #fff top right no-repeat !important}
+#ol_pw:focus {outline:solid 1px #e8180c;}
+#auto_login {}
+#auto_login_label {letter-spacing:0em;font-size:11px;color:#bcc1c4;padding-left:4px}
+#ol_submit {display:inline-block;width:100%;height:24px;
+  background:#e84c3d;border:1px solid #e84c3d;color:#fff;font-size:0.9em;
+  font-weight:bold;vertical-align:top;border-radius:3px;margin-left:1px; text-align: center;}
+#ol_before a {letter-spacing:0em}
+#ol_svc {text-align:center;margin:5px 0 0}
+#ol_password_lost {display:inline-block;margin:0 0 0 5px;font-size:11px;color:#bcc1c4}
+#ol_auto {position:relative;text-align:center;margin:5px 0 0}
+#ol_auto label {}
+#ol_auto input {width:13px;height:13px;vertical-align:bottom;border-color:#e84c3d}
+
+input[id="auto_login"] {display: none;}
+input[id="auto_login"] + label {display: inline-block;width:10px;height:10px;border:1px solid #e84c3d;border-radius:3px;cursor: pointer;}
+input[id="auto_login"]:checked + label:after {position:relative;bottom:4px;left:0;content: '\2714';font-size: 12px;}
+
+.fd_regi {position:relative;width:98%;height:20px;margin-bottom: 20px;
+  /*background:#dcdcdc;border-radius:0px 0px 4px 4px*/
+}
+.fd_regi a {position:absolute;bottom:2px;right:3px;font-family:Arial;color:#4a4a4a;font-size:11px;text-decoration:underline;]
+
+#ol_after {}
+#ol_after_hd {margin:0 0 3px}
+#ol_after_hd .btn_admin {margin-top:5px;width:158px;text-align:center}
+#fd_page h5 {text-align:center;}
+#fd_page #ol_after_private {border:1px solid #e4eaec;background:#fff;margin:0 0 3px;overflow:hidden;zoom:1}
+#ol_after_private:after {display:block;visibility:hidden;clear:both;content:""}
+#ol_after_private li {float:left}
+#ol_after_private a {display:block;padding-top:8px;height:37px;background:#f7f7f7;text-align:center}
+#ol_after_private a strong {display:block;padding-top:3px;color:#000;font-weight:normal}
+#ol_after_private a:focus strong,
+#ol_after_private a:hover strong {color:#fff;text-decoration:none}
+#ol_after_memo {width:50px;margin-right:1px}
+#ol_after_pt {width:80px;margin-right:1px}
+#ol_after_scrap {width:48px;line-height:2.6em !important}

@@ -17,10 +17,40 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <h2 class="sound_only">최신글</h2>
 <!-- 최신글 시작 { -->
+<!--
+<div style="float:left;width:352px;">
+    <?php //echo latest_group("theme/web_group2", "talk", 5, 20); ?>
+</div> -->
 
-<div style="float:left;width:352px">
-    <?php echo latest_group("theme/web_group2", "talk", 3, 20); ?> 
+
+
+
+
+
+
+
+
+<div class="comm_tab">
+   <?php echo latest_tab_group("talk|cookRes|life", 5, 10, latest_tab_group, 0);  ?>
+  </div>
+ <div class="news_slider">
+  <?php echo latest("section_bnr", "ns_sports", "5", "30");?>
 </div>
+
+ <?php echo latest("theme/oneshot", "ns_sports", 2, 25); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -49,7 +79,6 @@ include_once(G5_THEME_PATH.'/head.php');
 //}
 ?>
 <!-- } 최신글 끝 -->
-
 
 
 

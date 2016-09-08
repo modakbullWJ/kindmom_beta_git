@@ -1,20 +1,20 @@
 <?php
 if (!defined('_GNUBOARD_')) exit;
-$gr_subject='톡톡톡';
+$bo_subject='스포츠';
 $list=array (
   0 => 
   array (
-    'wr_id' => '1',
-    'wr_num' => '-1',
+    'wr_id' => '2',
+    'wr_num' => '-2',
     'wr_reply' => '',
-    'wr_parent' => '1',
+    'wr_parent' => '2',
     'wr_is_comment' => '0',
     'wr_comment' => '0',
     'wr_comment_reply' => '',
     'ca_name' => '',
     'wr_option' => '',
-    'wr_subject' => '베스트!',
-    'wr_content' => '요요',
+    'wr_subject' => '스포츠 나무입니다.',
+    'wr_content' => '스포츠 머리를 한 나무 입니다. 스포츠 뉴스에서 확인하세요.',
     'wr_link1' => '',
     'wr_link2' => '',
     'wr_link1_hit' => '0',
@@ -27,9 +27,9 @@ $list=array (
     'wr_name' => '최고관리자',
     'wr_email' => 'admin@domain.com',
     'wr_homepage' => '',
-    'wr_datetime' => '2016-09-08 15:32:54',
+    'wr_datetime' => '2016-09-08 19:21:51',
     'wr_file' => '1',
-    'wr_last' => '2016-09-08 15:32:54',
+    'wr_last' => '2016-09-08 19:21:51',
     'wr_ip' => '1.217.54.28',
     'wr_facebook_user' => '',
     'wr_twitter_user' => '',
@@ -44,20 +44,20 @@ $list=array (
     'wr_9' => '',
     'wr_10' => '',
     'is_notice' => false,
-    'subject' => '베스트!',
+    'subject' => '스포츠 나무입니다.',
     'comment_cnt' => '',
     'datetime' => '2016-09-08',
-    'datetime2' => '15:32',
+    'datetime2' => '19:21',
     'last' => '2016-09-08',
-    'last2' => '15:32',
+    'last2' => '19:21',
     'name' => '<span class="sv_member">최고관리자</span>',
     'reply' => 0,
     'icon_reply' => '',
     'icon_link' => '',
-    'ca_name_href' => 'http://test.hostcube.co.kr/bbs/board.php?bo_table=best_talk&amp;sca=',
-    'href' => 'http://test.hostcube.co.kr/bbs/board.php?bo_table=best_talk&amp;wr_id=1',
-    'comment_href' => 'http://test.hostcube.co.kr/bbs/board.php?bo_table=best_talk&amp;wr_id=1',
-    'icon_new' => '<img src="http://test.hostcube.co.kr/theme/kindmom_alpha/skin/latest/web_group2/img/icon_new.gif" alt="새글">',
+    'ca_name_href' => 'http://test.hostcube.co.kr/bbs/board.php?bo_table=ns_sports&amp;sca=',
+    'href' => 'http://test.hostcube.co.kr/bbs/board.php?bo_table=ns_sports&amp;wr_id=2',
+    'comment_href' => 'http://test.hostcube.co.kr/bbs/board.php?bo_table=ns_sports&amp;wr_id=2',
+    'icon_new' => '<img src="http://test.hostcube.co.kr/skin/latest/section_bnr/img/icon_new.gif" alt="새글">',
     'icon_hot' => '',
     'icon_secret' => '',
     'link' => 
@@ -67,8 +67,8 @@ $list=array (
     ),
     'link_href' => 
     array (
-      1 => 'http://test.hostcube.co.kr/bbs/link.php?bo_table=best_talk&amp;wr_id=1&amp;no=1',
-      2 => 'http://test.hostcube.co.kr/bbs/link.php?bo_table=best_talk&amp;wr_id=1&amp;no=2',
+      1 => 'http://test.hostcube.co.kr/bbs/link.php?bo_table=ns_sports&amp;wr_id=2&amp;no=1',
+      2 => 'http://test.hostcube.co.kr/bbs/link.php?bo_table=ns_sports&amp;wr_id=2&amp;no=2',
     ),
     'link_hit' => 
     array (
@@ -79,9 +79,7 @@ $list=array (
     array (
       'count' => '1',
     ),
-    'icon_file' => '<img src="http://test.hostcube.co.kr/theme/kindmom_alpha/skin/latest/web_group2/img/icon_file.gif" alt="첨부파일">',
-    'bo_subject' => '베스트',
-    'bo_table' => 'best_talk',
+    'icon_file' => '<img src="http://test.hostcube.co.kr/skin/latest/section_bnr/img/icon_file.gif" alt="첨부파일">',
   ),
   1 => 
   array (
@@ -94,8 +92,8 @@ $list=array (
     'wr_comment_reply' => '',
     'ca_name' => '',
     'wr_option' => '',
-    'wr_subject' => '글은 자유롭게 자유게시판',
-    'wr_content' => '요 맨',
+    'wr_subject' => '스포츠 선글라스',
+    'wr_content' => '스포츠 선글라스 입니다. 스포츠 뉴스에서 확인하세요.',
     'wr_link1' => '',
     'wr_link2' => '',
     'wr_link1_hit' => '0',
@@ -108,9 +106,9 @@ $list=array (
     'wr_name' => '최고관리자',
     'wr_email' => 'admin@domain.com',
     'wr_homepage' => '',
-    'wr_datetime' => '2016-09-08 15:32:23',
-    'wr_file' => '0',
-    'wr_last' => '2016-09-08 15:32:23',
+    'wr_datetime' => '2016-09-08 19:20:47',
+    'wr_file' => '1',
+    'wr_last' => '2016-09-08 19:20:47',
     'wr_ip' => '1.217.54.28',
     'wr_facebook_user' => '',
     'wr_twitter_user' => '',
@@ -125,20 +123,20 @@ $list=array (
     'wr_9' => '',
     'wr_10' => '',
     'is_notice' => false,
-    'subject' => '글은 자유롭게 자유게시판',
+    'subject' => '스포츠 선글라스',
     'comment_cnt' => '',
     'datetime' => '2016-09-08',
-    'datetime2' => '15:32',
+    'datetime2' => '19:20',
     'last' => '2016-09-08',
-    'last2' => '15:32',
+    'last2' => '19:20',
     'name' => '<span class="sv_member">최고관리자</span>',
     'reply' => 0,
     'icon_reply' => '',
     'icon_link' => '',
-    'ca_name_href' => 'http://test.hostcube.co.kr/bbs/board.php?bo_table=free_talk&amp;sca=',
-    'href' => 'http://test.hostcube.co.kr/bbs/board.php?bo_table=free_talk&amp;wr_id=1',
-    'comment_href' => 'http://test.hostcube.co.kr/bbs/board.php?bo_table=free_talk&amp;wr_id=1',
-    'icon_new' => '<img src="http://test.hostcube.co.kr/theme/kindmom_alpha/skin/latest/web_group2/img/icon_new.gif" alt="새글">',
+    'ca_name_href' => 'http://test.hostcube.co.kr/bbs/board.php?bo_table=ns_sports&amp;sca=',
+    'href' => 'http://test.hostcube.co.kr/bbs/board.php?bo_table=ns_sports&amp;wr_id=1',
+    'comment_href' => 'http://test.hostcube.co.kr/bbs/board.php?bo_table=ns_sports&amp;wr_id=1',
+    'icon_new' => '<img src="http://test.hostcube.co.kr/skin/latest/section_bnr/img/icon_new.gif" alt="새글">',
     'icon_hot' => '',
     'icon_secret' => '',
     'link' => 
@@ -148,8 +146,8 @@ $list=array (
     ),
     'link_href' => 
     array (
-      1 => 'http://test.hostcube.co.kr/bbs/link.php?bo_table=free_talk&amp;wr_id=1&amp;no=1',
-      2 => 'http://test.hostcube.co.kr/bbs/link.php?bo_table=free_talk&amp;wr_id=1&amp;no=2',
+      1 => 'http://test.hostcube.co.kr/bbs/link.php?bo_table=ns_sports&amp;wr_id=1&amp;no=1',
+      2 => 'http://test.hostcube.co.kr/bbs/link.php?bo_table=ns_sports&amp;wr_id=1&amp;no=2',
     ),
     'link_hit' => 
     array (
@@ -158,9 +156,8 @@ $list=array (
     ),
     'file' => 
     array (
-      'count' => '0',
+      'count' => '1',
     ),
-    'bo_subject' => '자유',
-    'bo_table' => 'free_talk',
+    'icon_file' => '<img src="http://test.hostcube.co.kr/skin/latest/section_bnr/img/icon_file.gif" alt="첨부파일">',
   ),
 )?>
