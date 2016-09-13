@@ -103,19 +103,32 @@ if ($ca['ca_include_head'])
 else
     include_once(G5_SHOP_PATH.'/_head.php');
 
+    ?>
+    <!--  메인 시안 sub.css 에 맞추기 위해 추가... wj-->
+    <div id="sub_layout">
+              <div class="sub_top_bg"></div>
+              <div class="sub_contents_wrap">
+
+<?php
+// 이 분류에 속한 하위분류 출력
+$cate_skin = $skin_dir.'/listcategory2.skin.php';
+if(!is_file($cate_skin))
+    $cate_skin = G5_SHOP_SKIN_PATH.'/listcategory2.skin.php';
+include $cate_skin;
+
+?>
+<!-- sub_contents 시작 WJ -->
+  <div class="sub_contents">
+
+<?php
 // 분류 위치
 // HOME > 1단계 > 2단계 ... > 6단계 분류
-$ca_id = $it['ca_id'];
+$ca_id = $it['ca_id2'];
 $nav_skin = $skin_dir.'/navigation.skin.php';
 if(!is_file($nav_skin))
     $nav_skin = G5_SHOP_SKIN_PATH.'/navigation.skin.php';
 include $nav_skin;
 
-// 이 분류에 속한 하위분류 출력
-$cate_skin = $skin_dir.'/listcategory.skin.php';
-if(!is_file($cate_skin))
-    $cate_skin = G5_SHOP_SKIN_PATH.'/listcategory.skin.php';
-include $cate_skin;
 
 if ($is_admin) {
     echo '<div class="sit_admin"><a href="'.G5_ADMIN_URL.'/shop_admin/itemform.php?w=u&amp;it_id='.$it_id.'" class="btn_admin">상품 관리</a></div>';
@@ -262,6 +275,12 @@ include_once(G5_SHOP_PATH.'/settle_naverpay.inc.php');
 // 하단 HTML
 echo conv_content($it['it_tail_html'], 1);
 ?>
+</div>
+<!-- /.sub_contents 끝 WJ -->
+</div>
+<!-- /#sub_layout 끝 WJ -->
+</div>
+<!-- /.sub_contents_wrap 끝 WJ-->
 
 <?php
 if ($ca['ca_include_tail'])

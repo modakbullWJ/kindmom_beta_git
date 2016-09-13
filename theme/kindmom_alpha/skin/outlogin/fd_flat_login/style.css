@@ -5,8 +5,9 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
-.ol {position:relative;padding:0;border-bottom:1px solid #dde4e9;background:#ecf0f1;border-radius:3px;}
-.ol h2 {display:inline-block;margin:0;padding:0;width:100%;height:32px;font-family:Arial;font-size:15px;line-height:32px;color:#510900;background:#e84c3d;text-align:center;overflow:hidden}
+.ol {position:relative;padding:0;border-bottom:1px solid #dde4e9;background:#fff;border-radius:3px;}
+.ol h2 {display:inline-block;margin:0;padding:0;width:100%;height:32px;font-family:Arial;
+  font-size:15px;line-height:32px;color:#fff;background:#f9abca;text-align:center;overflow:hidden}
 .ol ul {margin:0;padding:0;list-style:none}
 
 .ol a.btn_fd_admin {display:inline-block;width:100%;margin-top:7px;height:24px;border:1px solid #e84c3d;background:#fff;color:#e84c3d;text-align:center;text-decoration:none;line-height:24px;font-family:Arial;font-weight:bold;letter-spacing:0.1em;vertical-align:middle;border-radius:3px;} /* 관리자 전용 버튼 */
@@ -33,25 +34,39 @@
 .fd_required, textarea.fd_required {background:url('../img/wrest.gif') #fff top right no-repeat !important}
 #ol_pw:focus {outline:solid 1px #e8180c;}
 #auto_login {}
-#auto_login_label {letter-spacing:0em;font-size:11px;color:#bcc1c4;padding-left:4px}
+#auto_login_label {letter-spacing:0em;font-size:11px;color:#666;padding-left:6px; vertical-align: top;}
 #ol_submit {display:inline-block;width:100%;height:24px;
   background:#e84c3d;border:1px solid #e84c3d;color:#fff;font-size:0.9em;
   font-weight:bold;vertical-align:top;border-radius:3px;margin-left:1px; text-align: center;}
 #ol_before a {letter-spacing:0em}
 #ol_svc {text-align:center;margin:5px 0 0}
-#ol_password_lost {display:inline-block;margin:0 0 0 5px;font-size:11px;color:#bcc1c4}
-#ol_auto {position:relative;text-align:center;margin:5px 0 0}
+#ol_password_lost {display:inline-block;margin:0 0 0 5px;font-size:11px;color:#666}
+#ol_auto {position:relative;text-align:center;margin:10px 0 0;}
 #ol_auto label {}
 #ol_auto input {width:13px;height:13px;vertical-align:bottom;border-color:#e84c3d}
 
 input[id="auto_login"] {display: none;}
-input[id="auto_login"] + label {display: inline-block;width:10px;height:10px;border:1px solid #e84c3d;border-radius:3px;cursor: pointer;}
+input[id="auto_login"] + label {display: inline-block;width:10px;height:10px;border:1px solid #f9abca; cursor: pointer;}
 input[id="auto_login"]:checked + label:after {position:relative;bottom:4px;left:0;content: '\2714';font-size: 12px;}
 
-.fd_regi {position:relative;width:98%;height:20px;margin-bottom: 20px;
+#fd_regi {position:relative;width:99%;height:24px;margin-bottom: 20px;
   /*background:#dcdcdc;border-radius:0px 0px 4px 4px*/
 }
-.fd_regi a {position:absolute;bottom:2px;right:3px;font-family:Arial;color:#4a4a4a;font-size:11px;text-decoration:underline;]
+#fd_regi a {
+  /*position:absolute;bottom:2px;right:3px;font-family:Arial;
+  color:#4a4a4a;font-size:11px;text-decoration:none;     */
+  display: inline-block;
+  font-family:Arial;
+    width: 100%;
+    height: 24px;
+    background: #e84c3d;
+    border: 1px solid #e84c3d;
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: bold;
+    vertical-align: top;
+    margin-left: 1px;
+    text-align: center;]
 
 #ol_after {}
 #ol_after_hd {margin:0 0 3px}

@@ -18,7 +18,7 @@ if(G5_COMMUNITY_USE === false) {
 <!-- } 콘텐츠 끝 -->
 
 <hr>
-<?php include_once(G5_THEME_PATH.'/inc/main/footer.php'); ?>
+<?php include_once(G5_THEME_PATH.'/inc/community/main/footer.php'); ?>
 <!-- 하단 시작 { -->
 <!-- <div id="ft">
     <?php //echo popular('theme/basic'); // 인기검색어, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정  ?>

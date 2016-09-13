@@ -7,7 +7,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$outlogin_skin_url.'/style.css">'
 
 <!-- 로그인 전 아웃로그인 시작 { -->
 <section id="ol_before" class="ol">
-    <h2>Member Sign in</h2>
+    <h2>착한엄마 로그인</h2>
 	<div id="fd_page">
 		<form name="foutlogin" action="<?php echo $outlogin_action_url ?>" onsubmit="return fhead_submit(this);" method="post" autocomplete="off">
 		<fieldset>
@@ -16,7 +16,17 @@ add_stylesheet('<link rel="stylesheet" href="'.$outlogin_skin_url.'/style.css">'
 			<input type="text" id="ol_id" name="mb_id" required class="fd_required" maxlength="20">
 			<label for="ol_pw" id="ol_pwlabel">PASSWORD<strong class="sound_only">필수</strong></label>
 			<input type="password" name="mb_password" id="ol_pw" required class="fd_required" maxlength="20">
-			<input type="submit" id="ol_submit" value="LOGIN">
+			<input type="submit" id="ol_submit" value="로그인">
+
+      <div class="form-group login-oauth">
+      <?php echo get_login_oauth('naver');?>
+      <?php echo get_login_oauth('facebook');?>
+      <?php //echo get_login_oauth('twitter');?>
+      <?php// echo get_login_oauth('google');?>
+      <?php echo get_login_oauth('kakao');?>
+      <div class="clearfix"></div>
+      </div>
+
 			<div id="ol_auto">
 				<input type="checkbox" name="auto_login" value="1" id="auto_login">
 				<label for="auto_login"></label><span id="auto_login_label">자동 로그인</span>
@@ -28,7 +38,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$outlogin_skin_url.'/style.css">'
 		</form>
 	</div>
 </section>
-<div class="fd_regi">
+<div id="fd_regi">
 	<a href="<?php echo G5_BBS_URL ?>/register.php">회원가입하기</a>
 </div>
 

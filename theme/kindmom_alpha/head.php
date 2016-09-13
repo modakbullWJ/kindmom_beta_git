@@ -19,13 +19,13 @@ include_once(G5_LIB_PATH.'/visit.lib.php');
 include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
 // 최신글 그룹별 출력을 위해 WJ
-include_once(G5_LIB_PATH.'/latest_group.lib.php');
+//include_once(G5_LIB_PATH.'/latest_group.lib.php');
 include_once(G5_LIB_PATH.'/latest_tab_group.lib.php');
 include_once(G5_LIB_PATH.'/best10.lib.php');
 
 ?>
 
-<?php include_once(G5_THEME_PATH.'/inc/main/header.php'); ?>
+<?php include_once(G5_THEME_PATH.'/inc/community/main/header.php'); ?>
 
 <!-- 상단 시작 { -->
 <!-- <div id="hd">
@@ -173,7 +173,7 @@ include_once(G5_LIB_PATH.'/best10.lib.php');
 
         <div id="best10">
           <h2>실시간 인기글</h2>
-          <? echo izen_group('best10', '', wr_hit, 10, 34, 1); ?>
+          <? echo izen_group('best10', '', wr_hit, 6, 34, 1); ?>
         </div>
 
         <?php echo poll('theme/basic'); // 설문조사, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>

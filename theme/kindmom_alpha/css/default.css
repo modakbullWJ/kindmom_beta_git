@@ -44,10 +44,10 @@ a:hover, a:focus, a:active {color:#000;text-decoration:underline}*/
 #logo {float:left;padding:5px 0 0}
 
 /* 전체 검색 */
-#hd_sch {float:right;margin:8px 85px 0 0;padding:0;border-bottom:1px solid #f9abca;}
+#hd_sch {float:right; position:relative; top:5px; left:-20px; margin:0;padding:0;border:3px solid #f9abca;}
 #hd_sch legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
-#hd_sch #sch_stx {padding-left:5px;width:200px;height:45px;border:0;background:#fff;line-height:1.9em !important;line-height:1.6em}
-#hd_sch #sch_submit {padding:0; height:45px; width: 50px; border:0;background:#f9abca;color:#fff;cursor:pointer; text-align: center;}
+#hd_sch #sch_stx {padding-left:5px;width:240px;height:40px;border:0;background:#fff;line-height:1.9em !important;line-height:1.6em; outline:none;}
+#hd_sch #sch_submit {padding:0; height:40px; width: 50px; border:0;background:#fff;color:#f9abca;cursor:pointer; text-align: center; outline:none;}
 
 /* 텍스트 크기 조절 */
 #text_size {float:left;margin:0 0 0 10px;letter-spacing:-3px}
@@ -85,14 +85,16 @@ a:hover, a:focus, a:active {color:#000;text-decoration:underline}*/
 #gnb_empty a {text-decoration:underline}
 
 /* 중간 레이아웃 */
-#wrapper {z-index:5;margin:0 auto;width:1200px;border-right:1px solid #dde4e9;border-left:1px solid #dde4e9;zoom:1; margin-top: 20px; }
+#wrapper {z-index:5;margin:0 auto;width:1200px;zoom:1; margin-top: 10px; }
 #wrapper:after {display:block;visibility:hidden;clear:both;content:""}
 
-#aside {float:right;margin:0 20px 0 -1px;width:298px;
+#aside {float:right;margin:0 70px 0 -1px;width:298px;
 /*border-left:1px solid #dde4e9;*/}
 
-#container {z-index:4;position:relative;float:left;padding:15px 16px 15px 15px;width:800px;min-height:500px;height:auto !important;
-  height:500px;border-right:1px solid #dde4e9;background:#f4f4f4;font-size:1em;zoom:1}
+/*패딩 탑 간격 조정 WJ*/
+#container {z-index:4;position:relative;float:left;padding:0px 16px 15px 15px;
+  width:800px;min-height:500px;height:auto !important;
+  height:500px; background:#f4f4f4;font-size:1em;zoom:1}
 #container:after {display:block;visibility:hidden;clear:both;content:""}
 #container_title {margin-bottom:20px;font-size:1.2em;font-weight:bold}
 

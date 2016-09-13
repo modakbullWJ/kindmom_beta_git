@@ -8,14 +8,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$group_latest_skin_url.'/style.cs
 <!-- <?php echo $bo_subject; ?> 최신글 시작 { -->
 <div style="height:106px" class="tab_list m1">
 <ul>
-<? 
-for($m=0; $m<count($gr_id); $m++) { 
-$num = $m+1;  
+<?
+for($m=0; $m<count($gr_id); $m++) {
+$num = $m+1;
 ?>
 <li class="m<?=$num?>">
 <a href="#" jquery16408452460570924265="<?=$num?>">
 <span><?=$gr[$m][gr_subject]?></span>
-</a> 
+</a>
 <ul>
 <?
 $empty_row = $rows - count($list[$m]);
@@ -24,7 +24,7 @@ for($n=0; $n<count($list[$m]); $n++) {
   echo "<li>";
   echo "<a class=\"board\" href=\"{$list[$m][$n][bo_table]}\">[{$list[$m][$n][bo_subject]}] </a>";
   echo "<a href=\"{$list[$m][$n]['href']}\">{$list[$m][$n][subject]}</a>";
-  if ($list[$m][$n]['comment_cnt']) 
+  if ($list[$m][$n]['comment_cnt'])
   echo " <a class=\"commnet\" href=\"{$list[$m][$n]['comment_href']}\">{$list[$m][$n]['comment_cnt']}</a>";
   echo "<span class=\"datetime\">{$list[$m][$n][datetime2]}</span>";
 
@@ -36,14 +36,14 @@ for($n=0; $n<count($list[$m]); $n++) {
         $list[$m][$n]['icon_new'] = '<img src="'.$group_latest_skin_url.'/img/icon_new.gif" alt="새글">';
 
 
-					
+
     $list[$m][$n]['icon_link'] = '';
     if ($list[$m][$n]['wr_link1'] || $list[$m][$n]['wr_link2'])
-	$list[$m][$n]['icon_link'] = '<img src="'.$group_latest_skin_url.'/img/icon_link.gif" alt="관련링크">';	
+	$list[$m][$n]['icon_link'] = '<img src="'.$group_latest_skin_url.'/img/icon_link.gif" alt="관련링크">';
 
     if ($list[$m][$n]['file']['count'])
         $list[$m][$n]['icon_file'] = '<img src="'.$group_latest_skin_url.'/img/icon_file.gif" alt="첨부파일">';
-		
+
     $list[$m][$n]['icon_hot'] = '';
     if ($board['bo_hot'] && $list[$m][$n]['wr_hit'] >= $board[$m][$n]['bo_hot'])
         $list[$m][$n]['icon_hot'] = '<img src="'.$group_latest_skin_url.'/img/icon_hot.gif" alt="인기글">';
@@ -54,16 +54,16 @@ for($n=0; $n<count($list[$m]); $n++) {
 
 
 //if (isset($list[$m][$n]['icon_new'])) echo " " . $list[$m][$n]['icon_new'];
-  echo " " . $list[$i][$n]['icon_new']; 
-  echo " " . $list[$m][$n]['icon_file']; 
-  echo " " . $list[$m][$n]['icon_link']; 
-  echo " " . $list[$m][$n]['icon_hot']; 
-  echo " " . $list[$m][$n]['icon_secret'];  
+  echo " " . $list[$i][$n]['icon_new'];
+  echo " " . $list[$m][$n]['icon_file'];
+  echo " " . $list[$m][$n]['icon_link'];
+  echo " " . $list[$m][$n]['icon_hot'];
+  echo " " . $list[$m][$n]['icon_secret'];
 
-  echo "</li>";  
+  echo "</li>";
 }
 
-            
+
             /*/echo $list[$i]['icon_reply']." ";
             echo "<a href=\"".$list[$i]['href']."\">";
             if ($list[$i]['is_notice'])
@@ -85,12 +85,12 @@ for($n=0; $n<count($list[$m]); $n++) {
             if (isset($list[$m][$n]['icon_link'])) echo " " . $list[$m][$n]['icon_link'];
             if (isset($list[$m][$n]['icon_secret'])) echo " " . $list[$m][$n]['icon_secret'];
 			*/
-            
+
 for($l=0; $l<$empty_row; $l++) {
   echo "<li> <a href='#'>".$gr[$m][gr_subject]."탭의 최신글이 더 없습니다.</a></li>";
 }
 ?>
-<li class="more"> <a href="<?php echo G5_BBS_URL?>/group.php?gr_id=<?=$gr_id[$m]?>">더보기</a> 
+<li class="more"> <a href="<?php echo G5_BBS_URL?>/group.php?gr_id=<?=$gr_id[$m]?>">더보기</a>
 </li>
 </ul>
 </li>

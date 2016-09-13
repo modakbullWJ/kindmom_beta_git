@@ -8,10 +8,10 @@ $sub_title = "";
 
 ?>
 <style type="text/css">
-	.subject {width:212px;padding:2px 0 0;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:block}
+	.subject {width:95%;padding:7px 0 0 10px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:block}
 	.subject img {vertical-align:bottom;}
 </style>
-<table width="212" cellpadding="0" cellspacing="0" style="padding:2px 0 0;">
+<table width="100%" cellpadding="0" cellspacing="0" style="padding:2px 0 0; border-top: 1px solid #dcdcdc;">
 <? for ($i=0; $i<count($list); $i++) { ?>
 <tr>
     <td colspan="4">
