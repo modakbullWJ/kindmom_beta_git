@@ -111,9 +111,9 @@ else
 
 <?php
 // 이 분류에 속한 하위분류 출력
-$cate_skin = $skin_dir.'/listcategory2.skin.php';
+$cate_skin = $skin_dir.'/listcategory3.skin.php';
 if(!is_file($cate_skin))
-    $cate_skin = G5_SHOP_SKIN_PATH.'/listcategory2.skin.php';
+    $cate_skin = G5_SHOP_SKIN_PATH.'/listcategory3.skin.php';
 include $cate_skin;
 
 ?>

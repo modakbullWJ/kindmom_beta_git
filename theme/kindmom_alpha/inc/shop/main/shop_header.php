@@ -36,7 +36,7 @@
  <!-- /메인메뉴 -->
 
  <div id="main_wrap">
-  
+
 
 
       <div class="global_wrap">
@@ -80,7 +80,7 @@
 
 						 </ul>
 
-						 <h1 class="logo"><a href="<?php echo G5_SHOP_URL?>/"><img src="<?php echo G5_THEME_URL ?>/img/main/logo.png" alt="로고" /></a></h1>
+						 <h1 class="logo"><a href="<?php echo G5_SHOP_URL?>/"><img src="<?php echo G5_THEME_URL ?>/img/main/shop_logo_w.png" alt="로고" /></a></h1>
 						 <div class="search">
 								 <input type="text" id="search_bar" class="search_bar"><button id="search_btn" class="search_btn"></button>
 						 </div>
@@ -159,6 +159,6 @@
 								 </div>
 						 </div>
 						 <!--서브메뉴끝-->
-
+  
 				 </div>
 		 </div>

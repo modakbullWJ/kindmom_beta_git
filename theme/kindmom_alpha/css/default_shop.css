@@ -85,7 +85,7 @@ a:hover, a:focus, a:active {color:#000;text-decoration:underline}*/
 #ft p {margin:0;padding:10px 0;line-height:1.8em}
 #ft span {display:inline-block;margin:0 15px 0 0}
 #ft b {display:inline-block;margin:0 5px 0 0}
-#ft_totop {position:absolute;top:20px;right:0}
+#ft_totop {width: 35px; margin-left:auto; margin-right: auto; margin-top: 10px;}
 
 /* 화면낭독기 사용자용 */
 #hd_login_msg {position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden}

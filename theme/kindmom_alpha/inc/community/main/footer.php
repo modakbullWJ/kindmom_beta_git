@@ -3,19 +3,20 @@
 
 						<div class="foot_info">
 								<ul class="slink">
-										<li><a href="#">착한엄마소개 &nbsp;&nbsp;Ι &nbsp;&nbsp;</a></li>
-										<li><a href="#">가맹점 개설문의 &nbsp;&nbsp;Ι &nbsp;&nbsp;</a></li>
-										<li><a href="#">사회공헌 활동 &nbsp;&nbsp;Ι &nbsp;&nbsp;</a></li>
-										<li><a href="#">사이트 이용약관 &nbsp;&nbsp;Ι &nbsp;&nbsp;</a></li>
-										<li><a href="#">개인정보 처리방침 &nbsp;&nbsp;Ι &nbsp;&nbsp;</a></li>
+										<li><a href="#">착한엄마소개 &nbsp;&nbsp;| &nbsp;&nbsp;</a></li>
+										<li><a href="#">가맹점 개설문의 &nbsp;&nbsp;| &nbsp;&nbsp;</a></li>
+										<li><a href="#">사회공헌 활동 &nbsp;&nbsp;| &nbsp;&nbsp;</a></li>
+										<li><a href="#">사이트 이용약관 &nbsp;&nbsp;| &nbsp;&nbsp;</a></li>
+										<li><a href="#">개인정보 처리방침 &nbsp;&nbsp;| &nbsp;&nbsp;</a></li>
 										<li><a href="#">시스템 오류신고</a></li>
 								</ul>
 								<div class="info_bottom">
+
+									<!--  커뮤니티 공지사항 최신글 WJ-->
 										<div class="notice">
 											 <?php echo latest('theme/cm_notice', 'cm_notice', 4, 25); ?>
-
-
 										</div>
+
 										<div class="contact_us">
 												<h3>고객지원센터 이용안내<strong>070-555-5555</strong></h3>
 												<ul>
@@ -37,7 +38,13 @@
 												통신판매업신고번호 : 서울가나구-0000호(서울 가나구청) 건강기능식품판매업 영업신고증 제 0호<br/>
 												전자메일주소 : Ι 호스팅제공자 : (주) 엔젤리또<br/>
 												 CORPORATION. ALL RIGHTS RESERVED.
-										</p>
+
+												 <?php
+												 if(G5_DEVICE_BUTTON_DISPLAY && !G5_IS_MOBILE) { ?>
+												  <a href="<?php echo get_device_change_url(); ?>" id="device_change">모바일 버전으로 보기</a>
+												 <?php }?>
+										</p>									
+
 								</div>
 						</div>
             <!-- /.addr -->

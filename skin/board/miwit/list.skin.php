@@ -74,7 +74,7 @@ if ($mw_basic[cf_guploader]) {
 
 // 카테고리
 $is_category = false;
-if ($board[bo_use_category]) 
+if ($board[bo_use_category])
 {
     $is_category = true;
     $category_location = mw_seo_url($bo_table, 0, "&sca=");
@@ -257,7 +257,12 @@ echo '<meta name="viewport" content="width=device-width,initial-scale=1.0,minimu
     <? } ?>
 <? } ?>
 
+<!--  sub_aside 추가 WJ-->
+<?php include_once(G5_THEME_PATH."/inc/community/sub/sub_aside.php");  ?>
+
+
 <?php include_once($board_skin_path."/mw.proc/mw.asset.php")?>
+
 
 <!-- 게시판 목록 시작 -->
 <table width="<?=$bo_table_width?>" align="center" cellpadding="0" cellspacing="0"><tr><td id=mw_basic>
@@ -377,7 +382,7 @@ if ($is_category && $mw_basic[cf_category_tab]) {
 <tr class=mw_basic_list_title>
     <? if ($is_checkbox) { ?><td width=40><input onclick="if (this.checked) all_checked(true); else all_checked(false);" type=checkbox></td><?}?>
     <? if (!$mw_basic[cf_post_num]) { ?><td width=60 class="media-no-text">번호</td><? } ?>
-    <? if (!$mw_basic['cf_list_cate'] && $is_category) {?> <td width="80" class="media-no-text">분류</td> <? }?> 
+    <? if (!$mw_basic['cf_list_cate'] && $is_category) {?> <td width="80" class="media-no-text">분류</td> <? }?>
     <? if (!$mw_basic[cf_post_name] && $mw_basic['cf_name_location']) { ?> <? if ($mw_basic[cf_attribute] != "anonymous") { ?> <td width=95 class="media-no-text">글쓴이</td> <?}?> <?}?>
     <? if ($mw_basic[cf_type] == "thumb") { ?><td width="<?=$mw_basic[cf_thumb_width]+20?>" class="thumb_td"> 이미지 </td><?}?>
     <td>제목</td>
@@ -633,25 +638,25 @@ else {
 
 if ($mw_basic[cf_social_commerce])
 {
-    $a = include("$social_commerce_path/list.skin.php");    
+    $a = include("$social_commerce_path/list.skin.php");
     if (!$a) continue;
     $list_run_time = mw_time_log($list_run_time, "[list] include /social_commerce/list.skin.php");
 }
 else if ($mw_basic[cf_talent_market])
 {
-    $a = include("$talent_market_path/list.skin.php");    
+    $a = include("$talent_market_path/list.skin.php");
     if (!$a) continue;
     $list_run_time = mw_time_log($list_run_time, "[list] include /talent_marekt/list.skin.php");
 }
 else if ($mw_basic[cf_type] == "gall" && $mw_basic[cf_contents_shop])
 {
-    $a = include("{$mw_cash['path']}/list.skin.php");    
+    $a = include("{$mw_cash['path']}/list.skin.php");
     if (!$a) continue;
     $list_run_time = mw_time_log($list_run_time, "[list] include /cybercash/list.skin.php");
 }
 else if ($mw_basic[cf_type] == "gall" && $mw_basic[cf_reward])
 {
-    $a = include("{$reward_path}/list.skin.php");    
+    $a = include("{$reward_path}/list.skin.php");
     if (!$a) continue;
     $list_run_time = mw_time_log($list_run_time, "[list] include /reward/list.skin.php");
 }
@@ -727,7 +732,7 @@ else if ($mw_basic[cf_type] == "gall")
 
         <div class="box" style="width:<?=$mw_basic[cf_thumb_width]+35?>px">
         <table border="0" cellspacing="0" cellpadding="0" class="gall_list">
-        <tr> 
+        <tr>
             <td>
                 <?php if (0) {//$list[$i]['ca_name']) { ?>
                 <div class="gall_info" style="float:left;">
@@ -735,7 +740,7 @@ else if ($mw_basic[cf_type] == "gall")
                 </div>
                 <?php } ?>
 
- 
+
                 <?php if (0) { //$list[$i]['datetime2']) { ?>
                 <div class="gall_info" style="float:right;">
                     <i class="fa fa-calendar"></i> <?php echo $list[$i]['datetime2']?>
@@ -873,7 +878,7 @@ else if ($mw_basic[cf_type] == "gall")
         <?
         if ($mw_basic[cf_type] == "desc" && is_mw_file($thumb_file)) {
             if ($list[$i][icon_secret] || $list[$i][is_secret] || $list[$i][wr_view_block] || $list[$i][wr_key_password])
-                $thumb_file = $board_skin_path.'/img/lock.png'; 
+                $thumb_file = $board_skin_path.'/img/lock.png';
 
             if (is_notice($list[$i]['wr_id']) && $thumb_file == mw_get_noimage())
                 $thumb_file = $board_skin_path.'/img/notice.png';
@@ -952,12 +957,12 @@ else if ($mw_basic[cf_type] == "gall")
             if ($mw_basic['cf_contents_shop']) {
                 echo "<span class='item'>{$mw_price}</span>";
             }
-            if (!$mw_basic['cf_post_name'] && !$mw_basic['cf_name_location']) { 
+            if (!$mw_basic['cf_post_name'] && !$mw_basic['cf_name_location']) {
                 if ($mw_basic['cf_attribute'] != "anonymous") {
                     echo "<span class='item'><i class='fa fa-user'></i> ".$list[$i]['name']."</span>";
                 }
             }
-            if ($mw_basic[cf_attribute] == 'qna') { 
+            if ($mw_basic[cf_attribute] == 'qna') {
                     if ($list[$i]['reply']) {
                         echo "&nbsp;";
                     }
@@ -1365,7 +1370,7 @@ function mw_notice(sw) {
         }
     }
 
-    if (!check_confirm(str)) 
+    if (!check_confirm(str))
         return;
 
     $("#sw").val(sw);
@@ -1495,4 +1500,3 @@ if ($mw_basic[cf_collect] == 'kakao' && $kakao_collect_path && is_mw_file("$kaka
     }
     $list_run_time = mw_time_log($list_run_time, "[list] kakao-collect");
 }
-

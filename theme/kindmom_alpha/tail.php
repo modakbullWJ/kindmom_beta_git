@@ -17,7 +17,7 @@ if(G5_COMMUNITY_USE === false) {
 
 <!-- } 콘텐츠 끝 -->
 
-<hr>
+<!-- <hr> -->
 <?php include_once(G5_THEME_PATH.'/inc/community/main/footer.php'); ?>
 <!-- 하단 시작 { -->
 <!-- <div id="ft">
@@ -37,11 +37,15 @@ if(G5_COMMUNITY_USE === false) {
     </div>
 </div> -->
 
-<?php
+<!-- <?php
 //if(G5_DEVICE_BUTTON_DISPLAY && !G5_IS_MOBILE) { ?>
-<!-- <a href="<?php// echo get_device_change_url(); ?>" id="device_change">모바일 버전으로 보기</a> -->
+ <a href="<?php echo get_device_change_url(); ?>" id="device_change">모바일 버전으로 보기</a>
+<?php// }?> -->
+
 <?php
-//}
+
+
+
 
 if ($config['cf_analytics']) {
     echo $config['cf_analytics'];

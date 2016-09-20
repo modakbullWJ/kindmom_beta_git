@@ -92,3 +92,7 @@ ul.prd_list li a:hover{border:1px solid #f9abca; box-shadow:0px 3px 10px #eee;}
 /*상품딜*/
 .deal_introduce{clear:both; width:100%; margin-top:50px; overflow:hidden; min-height:500px; background:#ededed;}
 
+
+/*톡톡톡 그룹*/
+
+#talk_upside{width:775px; min-height:200px; border: 1px solid #dcdcdc; overflow: hidden; background: #fff; margin: 0 auto;}

@@ -3,6 +3,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 include_once(G5_LIB_PATH.'/thumbnail.lib.php');
 
 
+$thumb_width = 100; //썸네일 가로 사이즈
+$thumb_height = 100; //썸네일 세로 사이즈
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$group_latest_skin_url.'/style.css">', 0);
 ?>
@@ -21,51 +23,41 @@ $num = $m+1;
 <ul>
 
 
-  <?php
-  for ($i=0; $i<count($list); $i++) {
-      $thumb = get_list_thumbnail($list[$i]['bo_table'], $list[$i]['wr_id'], $thumb_width, $thumb_height);
-      if($thumb['src']) {
-          $img = '<img src="'.$thumb['src'].'" alt="'.$thumb['alt'].'" width="'.$thumb_width.'" height="'.$thumb_height.'">';
-    $wr_subject = cut_str(strip_tags($list[$i]['wr_content']), 40); //이미지가 있을때 글자수
-      } else {
-    $wr_subject = cut_str(strip_tags($list[$i]['wr_content']), 60); //이미지가 없을때 글자수
-      }
-  ?>
-      <li>
-          <?php if($thumb['src']) { ?>
-          <div class="wimg">
-              <a href="<?php echo $list[$i]['href']; ?>"><?php echo $img; ?></a>
-          </div>
-          <?php } ?>
+<div class="tab_cnt">
 
+
+<ul>
 
 
 
 <?
 $empty_row = $rows - count($list[$m]);
 
+
 for($n=0; $n<count($list[$m]); $n++) {
-  echo "<li>";
-  echo "<a class=\"board\" href=\"{$list[$m][$n][bo_table]}\">[{$list[$m][$n][bo_subject]}] </a>";
-  echo "<a href=\"{$list[$m][$n]['href']}\">{$list[$m][$n][subject]}</a>";
+  echo "<li class=list$n>";
+  // echo "<a class=\"board\" href=\"{$list[$m][$n][bo_table]}\">[{$list[$m][$n][bo_subject]}] </a>";
+  // echo "<a href=\"{$list[$m][$n]['href']}\">{$list[$m][$n][subject]}</a>";
 
-    $thumb = get_list_thumbnail($list[$m][$n][bo_table], $list[$m][$n]['wr_id'], $thumb_width, $thumb_height);
-
-
+    $thumb = get_list_thumbnail($list[$m][$n]['bo_table'], $list[$m][$n]['wr_id'], $thumb_width, $thumb_height);
     if($thumb['src']) {
-        $img = '<img src="'.$thumb['src'].'" alt="'.$thumb['alt'].'" width="'.$thumb_width.'" height="'.$thumb_height.'">';
-
+        $img = '<img src="'.$thumb['src'].'" alt="'.$thumb['alt'].'" width="'.$thumb_width.'%"  height="'.$thumb_height.'%">';
     }
-
-    <?php if($thumb['src']) { ?>
-  '<div class="wimg">'  
+   if($thumb['src']) { ?>
+<span>
         <a href="<?php echo $list[$m][$n]['href']; ?>"><?php echo $img; ?></a>
-    </div>
+</span>
+
+
+<span class ="txt">
+      <a class="board" href="<?php echo $list[$m][$n]['bo_table']?>"> <?php echo $list[$m][$n]['bo_subject']; ?> </a>
+    <a href="<?php echo $list[$m][$n]['href']?>"> <?php echo $list[$m][$n]['subject'] ?></a>
+
+</span>
+
     <?php } ?>
-?>
 
-
-
+<?php
   if ($list[$m][$n]['comment_cnt'])
   echo " <a class=\"commnet\" href=\"{$list[$m][$n]['comment_href']}\">{$list[$m][$n]['comment_cnt']}</a>";
   echo "<span class=\"datetime\">{$list[$m][$n][datetime2]}</span>";
@@ -96,15 +88,14 @@ for($n=0; $n<count($list[$m]); $n++) {
 
 
 //if (isset($list[$m][$n]['icon_new'])) echo " " . $list[$m][$n]['icon_new'];
-  echo " " . $list[$i][$n]['icon_new'];
-  echo " " . $list[$m][$n]['icon_file'];
-  echo " " . $list[$m][$n]['icon_link'];
-  echo " " . $list[$m][$n]['icon_hot'];
-  echo " " . $list[$m][$n]['icon_secret'];
+//  echo " " . $list[$i][$n]['icon_new'];
+  //echo " " . $list[$m][$n]['icon_file'];
+  //echo " " . $list[$m][$n]['icon_link'];
+//  echo " " . $list[$m][$n]['icon_hot'];
+  //echo " " . $list[$m][$n]['icon_secret'];
 
   echo "</li>";
 }
-
 
             /*/echo $list[$i]['icon_reply']." ";
             echo "<a href=\"".$list[$i]['href']."\">";
@@ -132,6 +123,19 @@ for($l=0; $l<$empty_row; $l++) {
   echo "<li> <a href='#'>".$gr[$m][gr_subject]."탭의 최신글이 더 없습니다.</a></li>";
 }
 ?>
+
+
+</ul>
+
+</div>
+
+
+
+
+
+
+
+
 <li class="more"> <a href="<?php echo G5_BBS_URL?>/group.php?gr_id=<?=$gr_id[$m]?>">더보기</a>
 </li>
 </ul>

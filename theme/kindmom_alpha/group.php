@@ -17,6 +17,9 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 <?php
 
 if($g5['title'] == '고객센터'){
+
+  // include_once(G5_THEME_PATH.'/inc/community/sub/sub_aside.php');
+
   // 자유게시판
   echo  '<div>';
   echo latest("theme/Nimple_basic","cm_notice","8",'15');
@@ -31,104 +34,127 @@ if($g5['title'] == '고객센터'){
 
 
 if($g5['title'] == '톡톡톡'){
+
+  // include_once(G5_THEME_PATH.'/inc/community/sub/sub_aside.php');
+
+  echo '<div id="talk_upside">';
+//  echo latest_all("theme/roll_issue1.08","talk_free,talk_humor",4,50);
+   echo latest_group_hit_img("theme/roll_issue1.08", "talk", 3, 20, 20);
+  echo '</div>';
+
+
+
+
   // 자유게시판
-  echo  '<div id="Nb_slt_talk_free">';
+  echo  '<div class="Nb_slt_left">';
   echo latest("theme/Nimple_basic","talk_free","8",'15');
   echo '</div>';
 
-  echo  '<div id="Nb_slt_talk_tv">';
+  echo  '<div class="Nb_slt_right">';
   echo latest("theme/Nimple_basic","talk_tv","8",'15');
   echo '</div>';
   // 재미
-  echo  '<div id="Nb_slt_talk_fun">';
+  echo  '<div class="Nb_slt_left">';
   echo latest("theme/Nimple_basic","talk_humor","8",'15');
   echo '</div>';
   // 우울
-  echo  '<div id="Nb_slt_talk_blue">';
+  echo  '<div class="Nb_slt_right">';
   echo latest("theme/Nimple_basic","talk_blue","8",'15');
   echo '</div>';
   // 고민
-  echo  '<div id="Nb_slt_talk_worry">';
+  echo  '<div class="Nb_slt_left">';
   echo latest("theme/Nimple_basic","talk_worry","8",'15');
   echo '</div>';
   // 좋은글귀
-  echo  '<div id="Nb_slt_talk_worry">';
+  echo  '<div class="Nb_slt_right">';
   echo latest("theme/Nimple_basic","talk_good","8",'15');
   echo '</div>';
 }
+
+
 if($g5['title'] == '요리·맛집'){
-  // 자유게시판
-  echo  '<div id="">';
+
+  // include_once(G5_THEME_PATH.'/inc/community/sub/sub_aside.php');
+
+
+  echo  '<div class="Nb_slt_left">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
 
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_right">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
-  // 재미
-  echo  '<div id="">';
-  echo latest("theme/Nimple_basic","","8",'15');
-  echo '</div>';  // 우울
-  echo  '<div id="">';
+
+  echo  '<div class="Nb_slt_left">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
-  // 고민
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_right">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
-  // 좋은글귀
-  echo  '<div id="">';
+
+  echo  '<div class="Nb_slt_left">';
+  echo latest("theme/Nimple_basic","","8",'15');
+  echo '</div>';
+
+  echo  '<div class="Nb_slt_right">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
 }
+
+
 if($g5['title'] == '육아'){
+
+  // include_once(G5_THEME_PATH.'/inc/community/sub/sub_aside.php');
+
   // 자유게시판
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_left">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
 
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_right">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
   // 재미
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_left">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';  // 우울
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_right">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
   // 고민
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_left">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
   // 좋은글귀
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_right">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
 }
 
 if($g5['title'] == '라이프'){
+  // include_once(G5_THEME_PATH.'/inc/community/sub/sub_aside.php');
+
   // 자유게시판
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_left">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
 
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_right">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
   // 재미
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_left">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';  // 우울
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_right">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
   // 고민
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_left">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
   // 좋은글귀
-  echo  '<div id="">';
+  echo  '<div class="Nb_slt_right">';
   echo latest("theme/Nimple_basic","","8",'15');
   echo '</div>';
 }
@@ -137,6 +163,7 @@ if($g5['title'] == '라이프'){
 
 
 if($g5['title'] == '뉴스'){
+  // include_once(G5_THEME_PATH.'/inc/community/sub/sub_aside.php');
 
 include("$g4[path]/plugin/google-news2/index.php");
 

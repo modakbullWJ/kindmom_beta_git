@@ -2,16 +2,11 @@
 /*메인 레이아웃*/
 
 
-#header{width:100%; height:184px;
-	background:#fff;
-}
+#header{width:100%; height:184px;	background:#fff;}
 #main_slide{width:100%; height:500px; background:#f4f4f4; margin-bottom:100px;}
 #middle_contents{width:1200px; height:374px; margin:0 auto; margin-bottom:100px; }
 #main_prd_category{width:1200px; height:700px; margin:0 auto; }
 #footer{width:100%; height:300px; background:#f4f4f4; clear:both;}
-
-
-
 
 
 
@@ -256,6 +251,15 @@ div.contact_us > div.contact_btn img{margin-top:5px;}
 
 
 /*contents영역 최신글*/
+
+.banner_upside {width: 796px; height: 100px; margin:0 0 10px 0; border: 1px solid #dcdcdc; background: #fff; }
+
+.banner_mid {width: 796px; height: 100px; margin:0 0 10px 0; border: 1px solid #dcdcdc; background: #fff; }
+
+
+
+
+
 .comm_tab{position: relative; float: left; width: 500px; height: 212px; padding: 11px 0px 15px 15px; overflow: hidden; margin-right: -1px;
     border: 1px solid #dcdcdc; background: #fff;}
 
@@ -264,71 +268,52 @@ div.contact_us > div.contact_btn img{margin-top:5px;}
 	border: 1px solid #dcdcdc; background: #fff;}
 
 
-	.news_slider_title{	width: 70px; margin-bottom: 9px; margin-left: 7px; margin-top:7px;}
+.news_slider_title{	width: 70px; margin-bottom: 9px; margin-left: 7px; margin-top:7px;}
 
-	.news_slider_title .lt_more a{ font-family: 돋움;  font-size: 11px;  position: absolute;  top: 10px;  right: 10px;  border: 0 !important;
-    background: transparent;}
+.news_slider_title .lt_more a{ font-family: 돋움;  font-size: 11px;  position: absolute;  top: 10px;  right: 10px;  border: 0 !important;
+background: transparent;}
 
 
-#best10{position: relative; float:left; width:100%; height: 233px; margin-bottom: 10px; border: 1px solid #dcdcdc; background: #fff;}
 
-#best10 > h2 {width: 98px; margin: 14px 0 12px 15px;  background-position: left -42px;}
-
-#oneshot {   position: relative;
-width: 780px;
-	 height: 250px;
-    padding: 15px 0px 0px 15px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    border: 1px solid #dcdcdc;
-    background: #fff;
-}
+#oneshot {position: relative;width: 780px; height: 230px; padding: 15px 0px 0px 15px; margin-bottom: 10px;
+	 overflow: hidden; border: 1px solid #dcdcdc;  background: #fff;}
 #mov_inner{margin-top: 25px;}
 
 
+/*index 탭 영역 WJ*/
+#main_tab_area{width: 795px; margin-bottom: 10px;height: 349px; overflow: hidden; background: #fff;
+		 /*border: 1px solid #dcdcdc*/}
 
-#main_tab_gallery{
-width: 795px;
-margin-bottom: 10px;
-height: 349px;
-overflow: hidden;
-border: 1px solid #a0a0a0;
-background: #fff;}
+ul.tabs {margin: 0;padding: 0;float: left;list-style: none;height: 32px;border-bottom: 1px solid #eee;
+border-left: 1px solid #eee;width: 100%;	font-family:"dotum";font-size:12px;}
 
+ul.tabs li {float: left;text-align:center;cursor: pointer;width:16.5%;height: 31px;line-height: 31px;border: 1px solid #eee;
+border-left: none;font-weight: bold;background: #fafafa;overflow: hidden;position: relative;}
 
+ul.tabs li.active {background: #FFFFFF;border-bottom: 1px solid #FFFFFF;}
 
-.tab_cnt{
-position: relative;
-height: 309px;
-padding: 20px 0 0 347px;
-overflow: hidden;}
+.tab_container {border: 1px solid #eee;border-top: none;clear: both;float: left;width: 100%;height: 100%;background: #FFFFFF;}
 
-.tab_cnt li {
-	position: relative;
-    float: left;
-    width: 149px;
-    height: 128px;
-    margin-bottom: 14px;
-    overflow: hidden;
-    border: 1px solid #eaeaea;
-}
+.tab_content {padding: 5px;font-size: 12px;display: none;}
 
-.tab_cnt .list0{position: absolute;
-    left: 15px;
-    top: 20px;
-    width: 315px;
-    height: 273px;}
+.tab_container .tab_content ul {width:100%;margin:0px;padding:0px;}
 
-.tab_cnt .list1, .list2, .list3, .list4{
-			margin-right: 15px;
-}
+.tab_container .tab_content ul li {padding:5px;list-style:none}
 
 
-.tab_cnt .txt{
-	position: absolute;
-left: 0;
-bottom: 0;
-height: 33px;
-width: 100%;
-padding-top: 7px;
-color: #fff;}
+
+
+/*우측 aside 영역*/
+
+#aside_notice{position: relative; float: left; width: 100%; height: 50px; border: 1px solid #dcdcdc; background: #fff; }
+
+#best10{position: relative; float:left; width:100%; height: 233px;border: 1px solid #dcdcdc; background: #fff;  margin: 10px 0 0 0; }
+
+#best10 > h2 {width: 98px; margin: 14px 0 12px 15px;  background-position: left -42px;}
+
+
+#aside_top_banner{position: relative; float: left; width: 100%; height:150px; border: 1px solid #dcdcdc; background: #fff;  margin: 10px 0 0 0; }
+
+#aside_mid_banner{position: relative; float: left; width: 100%; height:150px; border: 1px solid #dcdcdc; background: #fff; margin: 10px 0 0 0;}
+
+#aside_bot_banner{position: relative; float: left; width: 100%; height:150px; border: 1px solid #dcdcdc; background: #fff; margin: 10px 0 0 0;}

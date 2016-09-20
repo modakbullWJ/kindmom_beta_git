@@ -11,7 +11,9 @@ define("_INDEX_", TRUE);
 include_once(G5_THEME_SHOP_PATH.'/shop.head.php');
 ?>
 <?php
+ include(G5_SHOP_SKIN_PATH.'/boxtodayview.skin.php'); // 오늘 본 상품 
 include_once(G5_THEME_PATH.'/inc/shop/main/shop_main_slider.php');
+
 include_once(G5_THEME_PATH.'/inc/shop/main/shop_main_mid_contents.php');
 include_once(G5_THEME_PATH.'/inc/shop/main/shop_main_prd_category.php');
 ?>

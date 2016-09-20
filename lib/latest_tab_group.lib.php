@@ -9,13 +9,30 @@ function latest_tab_group($group="", $rows=10, $subject_len=40, $skin_dir='', $o
 
     if (!$skin_dir) $skin_dir = 'basic';
 
-    if(G5_IS_MOBILE) {
-        $group_latest_skin_path = G5_MOBILE_PATH.'/'.G5_SKIN_DIR.'/latest/'.$skin_dir;
-        $group_latest_skin_url  = G5_MOBILE_URL.'/'.G5_SKIN_DIR.'/latest/'.$skin_dir;
+    // theme/스킨명 으로도 최신글을 불러올 수 있게 하기 위해서 WJ
+
+    if(preg_match('#^theme/(.+)$#', $skin_dir, $match)) {
+        if (G5_IS_MOBILE) {
+            $group_latest_skin_path = G5_THEME_MOBILE_PATH.'/'.G5_SKIN_DIR.'/latest/'.$match[1];
+            if(!is_dir($group_latest_skin_path))
+                $group_latest_skin_path = G5_THEME_PATH.'/'.G5_SKIN_DIR.'/latest/'.$match[1];
+            $group_latest_skin_url = str_replace(G5_PATH, G5_URL, $group_latest_skin_path);
+        } else {
+            $group_latest_skin_path = G5_THEME_PATH.'/'.G5_SKIN_DIR.'/latest/'.$match[1];
+            $group_latest_skin_url = str_replace(G5_PATH, G5_URL, $group_latest_skin_path);
+        }
+        $skin_dir = $match[1];
     } else {
-        $group_latest_skin_path = G5_SKIN_PATH.'/latest/'.$skin_dir;
-        $group_latest_skin_url  = G5_SKIN_URL.'/latest/'.$skin_dir;
+        if(G5_IS_MOBILE) {
+            $group_latest_skin_path = G5_MOBILE_PATH.'/'.G5_SKIN_DIR.'/latest/'.$skin_dir;
+            $group_latest_skin_url  = G5_MOBILE_URL.'/'.G5_SKIN_DIR.'/latest/'.$skin_dir;
+        } else {
+            $group_latest_skin_path = G5_SKIN_PATH.'/latest/'.$skin_dir;
+            $group_latest_skin_url  = G5_SKIN_URL.'/latest/'.$skin_dir;
+        }
     }
+
+
 
     $gr_id = explode("|", $group);
     $gr = array();

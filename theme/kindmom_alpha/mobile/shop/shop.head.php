@@ -35,7 +35,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 
 
     </ul>
-    <div id="logo"><a href="<?php echo G5_SHOP_URL; ?>/"><img src="<?php echo G5_DATA_URL; ?>/common/mobile_logo_img" alt="<?php echo $config['cf_title']; ?> 메인"></a></div>
+    <div id="logo"><a href="<?php echo G5_SHOP_URL; ?>/"><img src="<?php echo G5_THEME_URL ?>/img/main/logo.png" alt="<?php echo $config['cf_title']; ?> 메인"></a></div>
 
     <?php include_once(G5_THEME_MSHOP_PATH.'/category.php'); // 분류 ?>
 

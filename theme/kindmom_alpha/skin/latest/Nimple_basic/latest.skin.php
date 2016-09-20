@@ -8,7 +8,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
 ?>
 
 <!-- <?php echo $bo_subject; ?> 최신글 시작 { -->
-<div class="Nb_slt">
+<!-- <div class="Nb_slt"> -->
 	<div class="NB_slt_title_wrap">
 		<?php echo $bo_subject; ?>
 		 <a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=<?php echo $bo_table ?>"><span class="sound_only"><?php echo $bo_subject ?></span>+</a>
@@ -52,5 +52,5 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
     <tr><td align=center>게시물이 없습니다.</td></tr>
     <?php }  ?>
  </table>
-</div>
+<!-- </div> -->
 <!-- } <?php echo $bo_subject; ?> 최신글 끝 -->

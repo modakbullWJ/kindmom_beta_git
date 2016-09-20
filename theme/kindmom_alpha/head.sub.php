@@ -45,7 +45,19 @@ if (G5_IS_MOBILE) {
 if($config['cf_add_meta'])
     echo $config['cf_add_meta'].PHP_EOL;
 ?>
-<title><?php echo $g5_head_title; ?></title>
+<title><?php //echo $g5_head_title;
+// 커뮤니티와 쇼핑몰의 상태바 표시를 다르게 하기 위해서 uri를 불러오고 shop의 포함 여부로 교체
+$ct_uri= $_SERVER['REQUEST_URI'];
+$searchName = "shop";
+if(strpos($ct_uri, $searchName) !== false) {
+  echo ('착한엄마SHOP');
+} else {
+    echo ('착한엄마');
+}
+
+
+
+ ?></title>
 <?php
 $shop_css = '';
 if (defined('_SHOP_')) $shop_css = '_shop';

@@ -107,12 +107,17 @@ ul.slink li{float:left; line-height:38px; letter-spacing:-1px;}
 ul.slink li a{font-weight:300; color:#999;font-size:14px; }
 
 div.info_bottom{width:1200px; margin:30px auto;}
-div.notice{float:left;}
+div.notice h2 a {font-size:18px; color:#f59ec2; width:70px; float:left; margin-right:20px;}
+div.notice > ul{font-size:12px; color:#333; float:left; width:400px;}
+div.notice > ul li a{font-weight:300; color:#555; font-family: 'Helvetica';}
+div.notice > ul li a:hover{color:#333; text-decoration:underline;}
+div.notice > ul li a span.date{display:inline-block;float: right;}
+/*div.notice{float:left;}
 div.notice h2{font-size:18px; color:#f59ec2; width:70px;  float:left; margin-right:20px;}
 div.notice > ul{font-size:14px; color:#333; float:left; width:400px;}
 div.notice > ul li a{font-weight:300; color:#555;font-size:14px;}
 div.notice > ul li a:hover{color:#333; text-decoration:underline;}
-div.notice > ul li a span.date{display:inline-block; margin-left:30px;}
+div.notice > ul li a span.date{display:inline-block; margin-left:30px;}*/
 
 div.contact_us{float:right; margin-left:85px;}
 div.contact_us > h3{font-size:18px; color:#f59ec2; width:175px;  float:left; margin-right:20px;}
@@ -126,6 +131,10 @@ div.contact_us > div.contact_btn img{margin-top:5px;}
 .addr{background:#f59ec2; height:120px;}
 .addr_txt{width:1200px; margin:0 auto; padding-top:20px; font-size:12px; color:#fff; font-weight:300; line-height:20px;}
 
+#device_change {
+  /*display:block;*/
+  margin:0.3em;padding:0.5em 0;
+ background:#f59ec2; color:#fff;font-size:11px; text-decoration:none;text-align:center}
 
 
 
